@@ -1,11 +1,126 @@
 /* Google Homepage CSS */
 
+body {
+	margin: 0;
+	padding: 0;
+	font-family: arial, sans-serif;
+}
+
+nav {
+	width: 100%;
+	min-width: 980px;
+
+
+}
 nav ul{
 	text-align: right;
+	margin-top: 15px;
+	padding-right: 30px;
 }
 
 nav ul li {
 	display: inline-block;
+	padding-right: 5px;
 	list-style-type: none;
 	margin: auto 3px;
+	font-size: 13px;
+	opacity: .75;
+}
+
+#name {
+	opacity: .55;
+}
+
+#grid_img {
+	vertical-align: middle;
+	background-image: url('https://ssl.gstatic.com/gb/images/i2_2ec824b0.png');
+	background-size: 528px 68px;
+	background-position: -132px -38px;
+	margin-right: 5px;
+	width: 30px;
+	height: 30px;
+	opacity: .55;
+}
+
+#bell_img {
+	vertical-align: middle;
+	background-image: url('https://ssl.gstatic.com/gb/images/i2_2ec824b0.png');
+	background-size: 528px 68px;
+	background-position: -194px -21px;
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	padding: 0 2px;
+	box-sizing: border-box;
+	background-color: rgba(0,0,0,.75);
+	border-radius: 50%;
+
+}
+
+#user_img {
+	vertical-align: middle;
+	background-image: url('https://lh3.googleusercontent.com/-Rj-3BvTUwE8/AAAAAAAAAAI/AAAAAAAAAAA/yb9sH0jn-o0/s64-c/photo.jpg');
+	background-size: 32px 32px;
+	width: 32px;
+	height: 32px;
+	margin-right: -1px;
+	margin-left: 10px;
+	padding: 0 0px;
+	border-radius: 50%;
+	opacity: 1.0;
+}
+
+.logo{
+	display: block;
+	text-align: center;
+}
+
+.search_box {
+	text-align: center;
+}
+
+.submit {
+	text-align: center;
+}
+
+.submit div {
+	display: inline;
+}
+
+footer {
+	position: absolute;
+	height: 35px;
+	width: 100%;
+	min-width: 980px;
+	background: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+}
+
+footer ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li {
+	list-style-type: none;
+	display: inline;
+	margin: 0;
+	padding-left: 27px;
+	font-size: small;
+	color: #666;
+	line-height: 33px;
+}
+
+.l_footer {
+	position: absolute;
+	left: 0;
+	text-align: left;
+}
+
+.r_footer {
+	position: absolute;
+	right: 0;
+	padding-right: 27px;
+	text-align: right;
 }
