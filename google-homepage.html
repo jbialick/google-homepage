@@ -1,4 +1,9 @@
-<!-- Google Homepage HTML -->
+<!-- 
+Google Homepage HTML
+Written by Jason A Bialick
+Updated 09/13/15
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,21 +16,30 @@
 	<nav>
 		<ul>
 			<li id="name">Jason</li>
-			<li>Gmail</li>
-			<li>Images</li>
-			<li id="grid_img"></li>
+			<li><a href="https://mail.google.com/mail/">Gmail</a></li>
+			<li><a href="https://photos.google.com/">Images</a></li>
+			<li><a id="grid_img" href="http://www.google.com/intl/en/about/products/"></a></li>
 			<li id="bell_img"></li>
 			<li id="user_img"></li>
 		</ul>
 	</nav>
 
 	<div class="logo">
-		<img alt="Google" height="92" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"/>
+
+		<!-- new brand gif
+		https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif
+		-->
+
+		<!-- new brand png
+		https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
+		-->
+
+		<img alt="Google" height="150" src="https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif"/>
 	</div>
 
 	<div class="search">
 		<form>
-			<input type="text" name="search">
+			<input id="search_box" type="text" name="search">
 			<div id="voice_img"></div>
 			<input id="submit_search" 
 				type="submit" 
@@ -40,14 +54,14 @@
 
 	<footer>
 		<ul class="l_footer">
-			<li id="foot_advert">Advertising</li>
-			<li>Business</li>
-			<li>About</li>
+			<li id="foot_advert"><a href="https://www.google.com/intl/en/ads/?fg=1">Advertising</a></li>
+			<li><a href="https://www.google.com/services/?fg=1&utm_expid=95258301-33.e_Zqn8C5TCiAoUmpRJT__w.0&utm_referrer=https%3A%2F%2Fwww.google.com%2F">Business</a></li>
+			<li><a href="https://www.google.com/intl/en/about/">About</a></li>
 		</ul>
 		<ul class="r_footer">
-			<li>Privacy</li>
-			<li>Terms</li>
-			<li>Settings</li>
+			<li><a href="https://www.google.com/intl/en/policies/privacy/?fg=1">Privacy</a></li>
+			<li><a href="https://www.google.com/intl/en/policies/terms/?fg=1">Terms</a></li>
+			<li><a href="https://www.google.com/preferences?hl=en">Settings</a></li>
 		</ul>
 	</footer>
 

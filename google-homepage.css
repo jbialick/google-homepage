@@ -1,4 +1,8 @@
-/* Google Homepage CSS */
+/* 
+Google Homepage CSS
+Written by Jason A Bialick
+Updated 09/13/15
+*/
 
 body {
 	width: 100%;
@@ -14,7 +18,7 @@ nav {
 
 
 }
-nav ul{
+nav ul {
 	text-align: right;
 	margin-top: 15px;
 	padding-right: 30px;
@@ -33,15 +37,20 @@ nav ul li {
 	opacity: .55;
 }
 
+#gmail, #images {
+	opacity: .75;
+}
+
 #grid_img {
+	display: inline-block;
 	vertical-align: middle;
 	background-image: url('https://ssl.gstatic.com/gb/images/i2_2ec824b0.png');
 	background-size: 528px 68px;
 	background-position: -132px -38px;
-	margin-right: 5px;
+	margin-right: 2px;
 	width: 30px;
 	height: 30px;
-	opacity: .55;
+	opacity: .75;
 }
 
 #bell_img {
@@ -77,10 +86,12 @@ nav ul li {
 	text-align: center;
 	width: 100%;
 	min-width: 980px;
-	padding-top: 135px;
+	padding-top: 107px;
 }
 
 .search {
+	position: relative;
+	top: -30px;
 	text-align: center;
 	width: 100%;
 	min-width: 980px;
@@ -89,35 +100,47 @@ nav ul li {
 
 .search form {
 	margin: 27px auto;
-	width: 49.4%;
 	min-width: 384px;
 	max-width: 484px;
 	height: 38px;
-	border: 1px solid #D9D9D9;
+	border: none;
 }
 
-.search form:hover {
+#search_box:hover{
 	border: 1px solid #A0A0A0;
 }
 
-.search form:active {
+#search_box:active {
 	border: 1px solid #4D90FE;
 }
 
 .search form input {
+	position: relative;
 	display: block;
-	margin-left: 8px;
-	margin-top: 7px;
 	width: 90%;
 	height: 22px;
 	border: none;
 	outline: none;
 }
 
+#search_box {
+	position: absolute;
+	margin: 0;
+	width: 600%;
+	min-width: 384px;
+	max-width: 484px;
+	height: 36px;
+	border: 1px solid #D9D9D9;
+	padding-left: 9px;
+	font-family: arial, sans-serif;
+	font-size: 16px;
+}
+
 #voice_img {
+	position: relative;
 	float: right;
-	margin-top: -31px;
-	margin-right: -1px;
+	margin-right: -10px;
+	margin-top: 1px;
 	width: 42px;
 	height: 38px;
 	background: url(img/voice_search.png)
@@ -127,7 +150,7 @@ nav ul li {
 
 form input[type=submit] {
 	display: inline-block;
-	margin-top: 39px;
+	margin-top: 71px;
 	height: 36px;
 	line-height: 27px;
 	padding: 0 16px;
@@ -143,14 +166,16 @@ form input[type=submit] {
 
 form input[type=submit]:hover {
 	border-color: #A0A0A0;
+	color: black;
 }
 
 form input[type=submit]:active {
 	border-color: #4D90FE;
+	color: black;
 }
 
 #submit_search {
-	margin-left: 41px;
+	margin-left: 32px;
 	margin-right:3px;
 	width: 126px;
 }
@@ -168,6 +193,11 @@ footer {
 	min-width: 980px;
 	background: #f2f2f2;
 	border-top: 1px solid #e4e4e4;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 footer ul {
